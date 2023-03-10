@@ -1,0 +1,45 @@
+body {
+  margin: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#answer_field {
+  height: 20px;
+  border: red solid 2px;
+  border-radius: 2px;
+  padding: 2px;
+  text-align: center;
+  width: 839px;
+  margin: 2px;
+  font-weight: bold;
+}
+.image {
+  width: 850px;
+}
+.svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.container {
+  width: fit-content;
+}
+.row {
+    width: 850px;
+    display: flex;
+}
+a {
+    flex: auto;
+    border: red solid 2px;
+    border-radius: 2px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.btn-selected {
+    background-color: bisque;
+}
