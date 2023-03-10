@@ -12,6 +12,7 @@ body {
   width: 839px;
   margin: 2px;
   font-weight: bold;
+  background-color: aliceblue;
 }
 .image {
   width: 850px;
@@ -24,10 +25,16 @@ body {
 }
 .container {
   width: fit-content;
+  margin-top: 70px;
 }
 .row {
     width: 850px;
     display: flex;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 a {
     flex: auto;
@@ -38,6 +45,7 @@ a {
     text-decoration: none;
     font-weight: bold;
     margin: 2px;
+    background-color: aliceblue;
 }
 
 .btn-selected {
