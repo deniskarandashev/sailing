@@ -1,5 +1,5 @@
-import { tab_1 } from "/db/tab_1.js"
-import { tab_2 } from "/db/tab_2.js"
+import { tab_1 } from "db/tab_1.js"
+import { tab_2 } from "db/tab_2.js"
 
 const pages = [tab_1, tab_2];
 
