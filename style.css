@@ -51,3 +51,36 @@ a {
 .btn-selected {
     background-color: bisque;
 }
+
+@media (max-width: 850px) {
+    .row {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #answer_field {
+        height: 20px;
+        border: red solid 2px;
+        border-radius: 2px;
+        padding: 2px;
+        text-align: center;
+        width: 90vw;
+        margin-top: 2px;
+        font-weight: bold;
+        background-color: aliceblue;
+      }
+
+      a {
+        flex: auto;
+        border: red solid 2px;
+        border-radius: 2px;
+        padding: 2px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 2px;
+        background-color: aliceblue;
+        width: 100%;
+    }
+}
