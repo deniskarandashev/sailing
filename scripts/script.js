@@ -14,35 +14,30 @@ jQuery(window).load(function () {
     pages.forEach(page => {
       const ids = Object.keys(page);
       ids.forEach(fieldId => {
-        setText(fieldId, page[fieldId].en);
-        setAttr(fieldId);
+        setAttr(fieldId, page[fieldId].en);
       })
     })
   }
 
-
-  function setAttr(fieldId) {
+  function setAttr(fieldId, text) {
     if (
       svgobject.contentDocument != null &&
       svgobject.contentDocument != undefined
     ) {
-      jQuery(`#${fieldId}`, svgdom).attr('fill', 'blue');
-      jQuery(`#${fieldId}`, svgdom).attr('style', 'cursor: pointer');
-
-    }
-  }
-
-  function setText(fieldId, text) {
-    if (
-      svgobject.contentDocument != null &&
-      svgobject.contentDocument != undefined
-    ) {
-      jQuery(`#${fieldId}`, svgdom).click(function () {
+      const el = jQuery(`#${fieldId}`, svgdom);
+      el.attr('fill', 'blue');
+      el.attr('style', 'cursor: pointer');
+      el.mouseover(function(e) {
+        e.target.attributes['fill'].textContent = 'red';
+      })
+      el.mouseout(function(e) {
+        e.target.attributes['fill'].textContent = 'blue';
+      })
+      el.click(function() {
         answerField.innerText = text;
       });
     }
   }
-
 
   init();
 });

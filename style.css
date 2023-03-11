@@ -5,7 +5,7 @@ body {
 
 #answer_field {
   height: 20px;
-  border: red solid 2px;
+  border: blue solid 2px;
   border-radius: 2px;
   padding: 2px;
   text-align: center;
@@ -38,7 +38,7 @@ body {
 }
 a {
     flex: auto;
-    border: red solid 2px;
+    border: blue solid 2px;
     border-radius: 2px;
     padding: 2px;
     text-align: center;
@@ -52,20 +52,21 @@ a {
     background-color: bisque;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
     .row {
-        width: 90vw;
+        width: calc(100vw - 35px);
         display: flex;
         flex-direction: column;
     }
 
     #answer_field {
-        height: 20px;
-        border: red solid 2px;
+        min-height: 20px;
+        height: fit-content;
+        border: blue solid 2px;
         border-radius: 2px;
         padding: 2px;
         text-align: center;
-        width: 90vw;
+        width: calc(100vw - 35px);
         margin-top: 2px;
         font-weight: bold;
         background-color: aliceblue;
@@ -73,7 +74,7 @@ a {
 
       a {
         flex: auto;
-        border: red solid 2px;
+        border: blue solid 2px;
         border-radius: 2px;
         padding: 2px;
         text-align: center;
@@ -83,4 +84,9 @@ a {
         background-color: aliceblue;
         width: 100%;
     }
+
+    .container {
+        width: fit-content;
+        margin-top: 130px;
+      }
 }
