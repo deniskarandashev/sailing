@@ -1,7 +1,8 @@
 import { tab_1 } from "../db/tab_1.js"
 import { tab_2 } from "../db/tab_2.js"
+import { tab_3 } from "../db/tab_3.js";
 
-const pages = [tab_1, tab_2];
+const pages = [tab_1, tab_2, tab_3];
 
 jQuery(window).load(function () {
 
